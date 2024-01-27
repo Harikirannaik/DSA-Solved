@@ -8,4 +8,4 @@ public class FtoC {
         int c = (int) ((5.0 / 9) * (f - 32));
         System.out.println("Fahrenheit " + f + " is " + c + " in celcius");
     }
-}
+} 
