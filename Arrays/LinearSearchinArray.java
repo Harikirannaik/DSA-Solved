@@ -4,37 +4,35 @@ import java.util.Scanner;
 
 public class LinearSearchinArray {
 
-    public static void linearSearch(int[] arr) {
+    public static int LineSearch(int[] arr) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number you are searching for: ");
+        System.out.println();
+        System.out.println("Enter the search element: ");
         int element = sc.nextInt();
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == element) {
-                System.out.println("Your number is " + element + " its at index " + i);
+            if (element == arr[i]) {
+                System.out.print("The Search element is " + arr[i] + "its at index no " + i);
             }
+            return element;
         }
+        return -1;
         
-        sc.close();
     }
-
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Enter the size of array: ");
+        System.out.print("Enter the Size of the Array: ");
         int size = s.nextInt();
-        int arr[] = new int[size];
+        int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
-            System.out.print("Enter element no " + (i + 1) + ": ");
+            System.out.print("Enter the element at index no " + (i + 1) + ": ");
             arr[i] = s.nextInt();
         }
-        System.out.println("Original Array is: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print("|" + arr[i] + "|");
+        System.out.print("Array is: ");
+        for (int j = 0; j < arr.length; j++) {
+            System.out.print("| " + arr[j] + " |");
         }
-        System.out.println();
-
-        linearSearch(arr);
+        LineSearch(arr);
         s.close();
     }
-   
 
 }

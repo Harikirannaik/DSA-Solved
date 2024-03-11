@@ -1,7 +1,6 @@
 package Arrays;
-import java.util.*;
 
-public class ArrayPperations {
+public class ArrayOperations {
     public static void main(String[] args) {
         int arr[] = new int[10];
         arr[0] = 10;
