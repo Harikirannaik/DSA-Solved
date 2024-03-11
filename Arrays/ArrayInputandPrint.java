@@ -14,5 +14,7 @@ public class ArrayInputandPrint {
         for(int i=0; i<n; i++){
             System.out.println(i+"th element is: " + arr[i]);
         }
+
+        s.close();
     }
 }
