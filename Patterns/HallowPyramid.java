@@ -12,18 +12,41 @@ public class HallowPyramid {
                 System.out.print(" ");
             }
             // star
-            System.out.print("*");
+            if(i>=1){
+                System.out.print("*");
+            }
             // space2
             for (int j = 1; j <= i; j++) {
-                System.out.print("1");
+                System.out.print(" ");
             }
             // space3
             for (int j = 1; j <= i - 1; j++) {
-                System.out.print("1");
+                System.out.print(" ");
+            }
+            if(i>2){
+                System.out.print("*");
+            }else{
+                System.out.print("*");
             }
             System.out.println();
         }
         
+        // bottom part
+        for (int i = 1; i < n; i++) {
+            // space
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            if(i<n-1){
+                System.out.print("*");
+            }
+            // space2
+            for (int j = 1; j < 2 * n - (2 * i + 2); j++) {
+                System.out.print(" ");
+            }
+            System.out.print("*");
+            System.out.println();
+        }
 
         s.close();
     }
